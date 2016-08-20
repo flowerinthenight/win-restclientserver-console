@@ -17,17 +17,6 @@ using System.Threading.Tasks;
 
 namespace RESTClientServerConsole
 {
-    public sealed class Context
-    {
-        private static readonly Lazy<Context> lazy = new Lazy<Context>(() => new Context());
-
-        public static Context Instance { get { return lazy.Value; } }
-
-        private Context() { }
-
-        public string RootDirectory { get; set; }
-    }
-
     public sealed class TrResource : RESTResource
     {
         [RESTRoute(Method = HttpMethod.GET, PathInfo = @"^/greet$")]
