@@ -26,6 +26,6 @@ RESTClientServerConsole.exe --url /endpoint?key1=value1&key2=value2 --method POS
 RESTClientServerConsole.exe --help
 ```
 
-# Licence
+# License
 
 [The MIT License](./LICENSE.md)
